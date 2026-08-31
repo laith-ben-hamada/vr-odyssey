@@ -88,8 +88,8 @@ export function Gallery() {
             <X size={18} />
           </button>
           <img
-            src={images[active].src}
-            alt={images[active].alt}
+            src={images[active]!.src}
+            alt={images[active]!.alt}
             className="max-h-[85svh] w-auto max-w-full rounded-lg border border-border object-contain shadow-[var(--glow-violet)]"
           />
         </div>

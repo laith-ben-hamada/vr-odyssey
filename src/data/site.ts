@@ -28,7 +28,8 @@ export const site = {
 } as const;
 
 export const mailHref = site.email ? `mailto:${site.email}` : "#location";
-export const telHref = site.phone ? `tel:${site.phone.replace(/\s/g, "")}` : "#location";
+const phone: string = site.phone;
+export const telHref = phone ? `tel:${phone.replace(/\s/g, "")}` : "#location";
 export const whatsappHref = site.whatsapp
   ? `https://wa.me/${site.whatsapp}`
   : "#location";
